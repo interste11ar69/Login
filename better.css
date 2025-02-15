@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(samuel-berner-A5GmtHW3O9k-unsplash.jpg) center/cover no-repeat;
+}
+
+/* Glassmorphic Container */
+.container {
+    width: 250px;
+    padding: 15px;
+    background: hsla(0, 0%, 50%, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 2px solid hsla(0, 0%, 40%, 0.2);
+}
+
+/* Title */
+.loginHere {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    background: hsla(0, 0%, 10%, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+}
+
+/* Input Focus Effect */
+input:focus {
+    background: hsl(0, 0%, 10%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 8px;
+    background: hsla(0, 0%, 10%, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background: hsl(0, 0%, 50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Guide Text */
+.guide {
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+/* Social Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icons div {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.568);
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.icons div:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
